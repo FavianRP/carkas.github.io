@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARKAS - Memberikan kebutuhan mobil bekas kalian</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- AlpineJS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- App -->
+    <script src="src/app.js"></script>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">CAR<span>KAS.</span></a>
+
+      <div class="navbar-nav">
+        <a href="#">Beranda</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Mobil Unggulan</a>
+        <a href="#products">Produk</a>
+        <a href="#contact">Kontak</a>
+        <a href="#profil">Ini Kami</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here" />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search Form end -->
+
+      <!-- Shopping Cart start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/product-unggulan/c1.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Porsche 911 GTS</h3>
+            <div class="item-price">IDR 5.200.000.000</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/product-unggulan/c2.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>McLaren MP4-12C Spider 3.8</h3>
+            <div class="item-price">IDR 4.400.000.000</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/product-unggulan/c3.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Innova Venturer 2.4 Diesel AT 2018</h3>
+            <div class="item-price">IDR 395.000.000</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+      <!-- Shopping Cart end -->
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>CAR<span>KAS</span></h1>
+        <p>Menyediakan kebutuhan mobil bekas berkualitas untuk klean klean semua.</p>
+        <a href="#" class="cta">Dapatkan Sekarang derr</a>
+      </main>
+    </section>
+    <!-- Hero Section end-->
+
+    <!-- About Section start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/coverdpn/cvr1.jpg" alt="About Us" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih kami?</h3>
+          <p>CarKas merupakan portal e-commerce mobil yang terintegrasi dan terbesar di Asia Tenggara. Hadir di Indonesia, Malaysia, Thailand, dan Singapura</p>
+          <p>Intinya mobil disini harga nya murah meriah muntah.</p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end -->
+
+    <!-- Menu Section start -->
+    <section id="menu" class="menu">
+      <h2><span>Mobil Bekas</span> Unggulan Kami</h2>
+      <p>Beberapa mobil bekas berkualitas unggulan yang tersedia disini derr.</p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/product-unggulan/c2.jpg" alt="k1" class="menu-card-img" />
+          <h3 class="menu-card-title">- Porsche 911 GTS -</h3>
+          <p class="menu-card-price">IDR 5.200.000.000</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/product-unggulan/c1.jpg" alt="k1" class="menu-card-img" />
+          <h3 class="menu-card-title">- McLaren MP4-12C Spider 3.8 -</h3>
+          <p class="menu-card-price">IDR 4.400.000.000</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/product-unggulan/c3.jpg" alt="k1" class="menu-card-img" />
+          <h3 class="menu-card-title">- Innova Venturer 2.4 Diesel AT 2018 -</h3>
+          <p class="menu-card-price">IDR 395.000.000</p>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section end -->
+
+    <!-- Products Section start -->
+    <section class="products" id="products">
+      <h2><span>Produk</span> Unggulan Kami</h2>
+      <p>Produk Unggulan kami yang terbaik dijamin murah meriah muntah.</p>
+
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product-unggulan/c1.jpg" :alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>McLaren MP4-12C Spider 3.8</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">IDR 4.400.000.000 <span>IDR 4.600.000.000</span></div>
+          </div>
+        </template>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product-unggulan/c2.jpg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Porsche 911 GTS</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">IDR 5.200.000.000 <span>IDR 5.500.000.000</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product-unggulan/c3.jpg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Innova Venturer 2.4 Diesel AT 2018</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">IDR 395.000.000 <span>IDR 400.000.000</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product-unggulan/c3.jpg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Innova Venturer 2.4 Diesel AT 2018</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">IDR 395.000.000 <span>IDR 400.000.000</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products Section end -->
+
+    <!-- Contact Section start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>Kontak kami jika kalian sangat ingin ingin mobil kami 😎</p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.4325735941457!2d106.86505939999999!3d-6.466757599999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c1d4ba357257%3A0x37dd98fa2fb4e934!2sSMA%20Plus%20PGRI%20Cibinong!5e0!3m2!1sen!2sid!4v1708512421756!5m2!1sen!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="Name" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="E-mail" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="HP" />
+          </div>
+          <button type="submit" class="btn">Send Messages</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section end -->
+
+    <!-- Profil Section start -->
+    <section id="profil" class="profil">
+      <h2>Ini<span> Kami</span></h2>
+      <p>Tentang kami, dikit aja.</p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/profil/p1.jpg" alt="k1" class="p1" />
+          <h3 class="menu-card-title">- Favian Rafi Pratama -</h3>
+          <p class="menu-card-price">Programmer, Editor, Cysec</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/profil/p2.jpg" alt="p2" class="menu-card-img" />
+          <h3 class="menu-card-title">- Sulthan Maulana -</h3>
+          <p class="menu-card-price">Yang nyari konten</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/profil/p3.jpg" alt="p3" class="menu-card-img" />
+          <h3 class="menu-card-title">- Dimas Rizkyanto -</h3>
+          <p class="menu-card-price">Yang nyari konten</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/profil/p4.jpg" alt="p4" class="menu-card-img" />
+          <h3 class="menu-card-title">- Arjuna Sastra -</h3>
+          <p class="menu-card-price">Yang nyari konten</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/profil/p5.jpg" alt="p5" class="menu-card-img" />
+          <h3 class="menu-card-title">- Jerry Adrian -</h3>
+          <p class="menu-card-price">Yang nyari konten</p>
+        </div>
+      </div>
+    </section>
+    <!-- Profil Section end -->
+
+    <!-- Profil 2
+    <div class="container">
+      <div class="card">
+        <img src="img/profil/p1.jpg" alt="p1" />
+        <div class="description">
+          <h1>Favian Rafi Pratama</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, est.</p>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="https://instagram.com/favianskii_"><i data-feather="instagram"></i></a>
+        <a href="https://github.com/FavianRP"><i data-feather="github"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#">Beranda</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Mobil Unggulan</a>
+        <a href="#products">Produk</a>
+        <a href="#contact">Kontak</a>
+        <a href="#profil">Ini Kami</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="https://github.com/FavianRP">Kelompok 1</a> | &copy; 2024</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Modal Box Item Detail start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/product-unggulan/c1.jpg" alt="Product 1" />
+          <div class="product-content">
+            <h3>McLaren MP4-12C Spider 3.8</h3>
+            <p>
+              <li>Liberty Walk Bodykit</li>
+              <li>FULL Mods</li>
+              <li>NIK 2013</li>
+              <li>Km 15.800</li>
+              <li>Pajak 05/24</li>
+            </p>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">IDR 395.000.000 <span>IDR 400.000.000</span></div>
+            <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Box Item Detail end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
